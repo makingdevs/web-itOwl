@@ -1,0 +1,8 @@
+@import "reset";
+.menu_area-light {
+  .navbar-nav li {
+    &.current > a, &.active > a {
+      color: blue !important;
+    }
+  }
+}
