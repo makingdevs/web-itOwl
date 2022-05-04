@@ -589,9 +589,9 @@ html.sticky-header-active #header .header-body {
 * Footer
 */
 #footer p, #footer li, #footer span, #footer a:not(.btn):not(.no-footer-css) {
-		color: #999;
+		color: rgb(255, 255, 255);
 }
 
 #footer .footer-copyright p {
-		color: #999;
+		color: rgb(255, 255, 255);
 }
