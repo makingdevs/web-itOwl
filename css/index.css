@@ -1,0 +1,115 @@
+.css-1xo07ii {
+  background-color: rgba(0, 0, 0, 0.55);
+}
+.text-header{
+  color:#c68642be;
+}
+.background-general{
+  background-color: #c68642be;
+}
+.V2yfr {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.colorGeneral{
+  background: linear-gradient(135deg, #536385 0%, #536385 80%) !important;
+	color: rgb(255, 255, 255);
+  word-wrap: break-word;
+}
+.colorGeneral:hover{
+  color: rgb(255, 255, 255);
+  word-wrap: break-word;
+}
+.textColor{
+  color: #e7eaea !important;
+}
+.textColorPackage{
+  color: #e21d19;
+}
+.colorCards{
+  background: #536385 !important;
+}
+.colorGeneralPage{
+  background:#536385 !important;
+}
+.textSize{
+  font-size: 16px !important;
+}
+.colorSections{
+  background-color: #272829 !important;
+}
+.colorAbout{
+  background-color: #c19d75 !important;
+}
+.colorcardContac{
+  background-color: transparent !important;
+}
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+}
+#div-cookies {
+  position: fixed;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  color: white;
+  background-color: #272829;
+  padding: 18px;
+  text-align: center;
+  z-index: 99;
+}
+.heightFooter{
+  height: none;
+}
+@media (max-width: 1024px){
+  .heightFooter{
+    display: block;
+    height: 599px;;
+  }
+}
+@media (max-width: 1026px) {
+  .heightFooter{
+    height: none;
+  }
+}
+
+@media (max-width: 991px){
+  .icons {
+    display: none;
+  }
+  .icon-arrow-down {
+    display: none;
+  }
+  .p-events-none{
+    display: none;
+  }
+}
+
+.owl-carousel.carousel-center-active-item-2 .owl-item.active > div {
+  background-image: linear-gradient(150deg, #536385 0%, #3d3a56 30%, #536385 70%, #3d3a56 100%) !important
+}
+.owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"] {
+  background-color: #536385 !important;
+  border-color: #0088cc #0088cc #006699;
+  color: #FFF;
+}
+.sort-source.sort-source-style-3 > li.active > a {
+	border-bottom-color: #ffffff !important;
+	color: #ffffff !important;
+}
+html .overlay-color-primary:not(.no-skin):before {
+  background-color: #c68642be !important;
+}
+.process .process-step-circle {
+  border-color: #592e14 !important;
+}
+.process .process-step:hover .process-step-circle {
+	background-color: #c68642be !important;
+}
