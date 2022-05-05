@@ -3425,6 +3425,7 @@ html.ie9 .call-to-action.button-centered .container > .row > [class*="col-"], ht
 .owl-carousel.nav-style-1 .owl-nav .owl-prev:before,
 .owl-carousel.nav-style-1 .owl-nav .owl-prev:after {
 	font-size: inherit;
+	color: #fff;
 }
 
 .owl-carousel.nav-style-2 .owl-nav .owl-next,
