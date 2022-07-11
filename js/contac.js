@@ -5,7 +5,8 @@ const sendNotification = (name, phone, mensaje, email) =>  {
                         Email: ${email}
                         Mensaje: ${mensaje}`.replace(/  +/g, '');
 
-  window.open(`https://api.whatsapp.com/send?phone=525583817789&text=${encodeURIComponent(message)}`, "_target")
+  //window.open(`https://api.whatsapp.com/send?phone=525583817789&text=${encodeURIComponent(message)}`, "_target")
+  window.open(`mailto:jovany@makingdevs.com?subject=Empresa IT OWL&body=${encodeURIComponent(message)}`, "_target")
 }
 
 $( "#button-send-contact" ).click(function() {
