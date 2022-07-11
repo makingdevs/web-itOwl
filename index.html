@@ -88,8 +88,11 @@
 				<div class="owl-stage-outer">
 					<div class="owl-stage">
 						<!-- Carousel Slide 1 -->
-						<div class="owl-item position-relative overlay overlay-show overlay-op-8"
-							style="background-image: url(img/abog.jpeg); background-size: cover; background-position: center; height: 100vh;">
+						<div class="owl-item position-relative video overlay overlay-show overlay-op-8"
+						data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}" style="height: 100vh;">
+						<video autoplay muted loop id="myVideo">
+							<source src="video/videoHome.mp4" type="video/mp4">
+						</video>
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
 									<div class="col-lg-6 text-center">
@@ -103,7 +106,7 @@
 												was created to be the bridge between the US and LATAM IT talented people. Therefore our
 												recruiting process is key for knowing new IT people from Latin America and people from companies
 												in the U.S.</p>
-											<a href="#"
+											<a href="#whoWe"
 												class="btn colorGeneral btn-modern font-weight-bold text-3 rounded-2 btn-py-3 btn-px-5 mt-3 appear-animation"
 												data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2300"
 												data-plugin-options="{'minWindowWidth': 0}" target="_blank">know more</a>
@@ -118,7 +121,7 @@
 						<div class="owl-item position-relative video overlay overlay-show overlay-op-8"
 							data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}" style="height: 100vh;">
 							<video autoplay muted loop id="myVideo">
-								<source src="video/abog.mov" type="video/mp4">
+								<source src="video/videoHome.mp4" type="video/mp4">
 							</video>
 							<div class="container position-relative z-index-3 h-100">
 								<div class="row justify-content-center align-items-center h-100">
@@ -133,9 +136,9 @@
 												good relationships during the whole recruiting process gives the opportunity to understand the
 												necessities that the company is facing and at the same time we can canalize the right candidates
 												to explore future job opportunities.</p>
-											<a href="#"
+											<a href="#contact"
 												class="btn colorCards btn-modern font-weight-bold text-white text-3 rounded-2 btn-py-3 btn-px-5 mt-3 appear-animation"
-												data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2300">know more</a>
+												data-appear-animation="fadeInUpShorter" data-appear-animation-delay="2300">Contact</a>
 										</div>
 									</div>
 								</div>
@@ -208,7 +211,7 @@
 
 			</div>
 
-			<section class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
+			<section id="whoWe" class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
 				<div class="container">
 					<div class="row align-items-center justify-content-center">
 						<div class="col-lg-6 pb-sm-4 pb-lg-0 pe-lg-5 mb-sm-5 mb-lg-0">
@@ -340,7 +343,7 @@
 				</div>
 			</section>
 
-			<section class="section section-overlay-opacity section-overlay-opacity-scale-7 border-0 m-0"
+			<section id="contact" class="section section-overlay-opacity section-overlay-opacity-scale-7 border-0 m-0"
 				style="background-image: url(img/team3.jpg); background-size: cover; background-position: center;">
 				<div class="container py-5">
 					<div class="row align-items-center justify-content-center">
