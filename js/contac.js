@@ -1,9 +1,9 @@
 const sendNotification = (name, phone, mensaje, email) =>  {
-  const message = `Hola! \nMe quiero comunicar con ustedes
-                        Mi nombre es: ${name}
-                        Teléfono: ${phone}
+  const message = `Hi! \nI want to communicate with you
+                        My name is: ${name}
+                        Phone: ${phone}
                         Email: ${email}
-                        Mensaje: ${mensaje}`.replace(/  +/g, '');
+                        Message: ${mensaje}`.replace(/  +/g, '');
 
   //window.open(`https://api.whatsapp.com/send?phone=525583817789&text=${encodeURIComponent(message)}`, "_target")
   window.open(`mailto:ruthamol@itowlus.com?subject=Empresa IT OWL&body=${encodeURIComponent(message)}`, "_target")
