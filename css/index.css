@@ -84,13 +84,15 @@
   .p-events-none{
     display: none;
   }
+  .text-size{
+    font-size: 20px !important;
+  }
 }
 
 .owl-carousel.carousel-center-active-item-2 .owl-item.active > div {
   background-image: linear-gradient(150deg, #536385 0%, #3d3a56 30%, #536385 70%, #3d3a56 100%) !important
 }
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"] {
-  background-color: #536385 !important;
   border-color: #0088cc #0088cc #006699;
   color: #FFF;
 }
