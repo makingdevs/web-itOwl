@@ -1,12 +1,12 @@
 .with-video-background {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
-.with-video-responsive {
-  display: none;
-  }
 .text-header{
   color:#c68642be;
 }
@@ -96,14 +96,8 @@
   .text-size{
     font-size: 20px !important;
   }
-  .with-video-responsive{
-    display: block;
-    height: 100%;
-  }
-  .with-video-background{
-    display: none;
-  }
 }
+
 
 .owl-carousel.carousel-center-active-item-2 .owl-item.active > div {
   background-image: linear-gradient(150deg, #536385 0%, #3d3a56 30%, #536385 70%, #3d3a56 100%) !important
