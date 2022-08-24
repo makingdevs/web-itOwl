@@ -9,14 +9,17 @@ const sendNotification = (name, phone, mensaje, email) =>  {
   window.open(`mailto:ruthamol@itowlus.com?subject=Business IT OWL&body=${encodeURIComponent(message)}`, "_target")
 }
 
-$( "#button-send-contact" ).click(function() {
+const submitForm = function(event) {
+  event.preventDefault();
   const name= $("#name").val();
   const phone= $("#phone").val();
   const email= $("#email").val();
   const mensaje= $("#mensaje").val();
-  document.getElementById("form-clean").reset();
-  if(name.length > 0, phone.length >0, mensaje.length >0, email.length > 0){
-    sendNotification(name, phone, mensaje, email);
-  }
-  console.log(this)
-});
+  document.getElementById("form__submit").reset();
+  sendNotification(name, phone, mensaje, email);
+};
+
+// your form
+var form = document.getElementById("form__submit");
+// attach event listener
+form.addEventListener("submit", submitForm, true);
