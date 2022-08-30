@@ -378,15 +378,6 @@
 				</div>
 			</section>
 
-			<div id="div-cookies" style="display: none;">
-				<img class="mb-2" src="/img/logo.PNG" />
-				<h5 class="text-white"> Privacy Policy</h5>
-				All images of IT OWL, logo and icon, know how and contracts are intelectual property protected and owned by IT OWL, LLC.
-				<br>
-				<button type="button" class="btn btn-sm colorGeneral" onclick="acceptCookies()">
-					Accept
-				</button>
-			</div>
   <!-- FOOTER -->
   <footer id="footer" class="mt-0">
     <div class="container my-4">
@@ -462,17 +453,5 @@
 <script src="js/contac.js"></script>
 
 <script>
-	function checkAcceptCookies() {
-		if (localStorage.acceptCookies == 'true') {
-		} else {
-			$('#div-cookies').show();
-		}
-	}
-	function acceptCookies() {
-		localStorage.acceptCookies = 'true';
-		$('#div-cookies').hide();
-	}
-	$(document).ready(function () {
-		checkAcceptCookies();
-	});
+
 </script>
