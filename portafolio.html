@@ -52,6 +52,9 @@
   <script src="vendor/js/modernizr.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 </head>
 
 <body data-plugin-page-transition>
@@ -64,8 +67,8 @@
             <div class="header-column">
               <div class="header-row">
                 <div class="">
-                  <a href="index.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
-                      data-sticky-top="0" src="img/head.PNG" style="width:100px"></a>
+                  <a href="home.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
+                      data-sticky-top="0" src="img/head-title.PNG" style="width:80px"></a>
                 </div>
               </div>
             </div>
@@ -78,27 +81,14 @@
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
                         <li class="dropdown">
-                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="index.html">
+                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="home.html">
                             Home
                           </a>
 
                         </li>
-                        <li class="dropdown">
-                          <a class="dropdown-item dropdown-toggle textSize" href="about.html">
-                            About <i class="p-2 p-events-none"><img src="img/down-arrow.png" /></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
-                          </ul>
-                        </li>
                         <li class="dropdown dropdown-mega">
-                          <a class="dropdown-item textSize" href="team.html">
-                            Team
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a class="dropdown-item textSize" href="contac.html">
-                            Contact
+                          <a class="dropdown-item textSize" href="portafolio.html">
+                            Briefcase
                           </a>
                         </li>
                       </ul>
@@ -154,8 +144,7 @@
             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="1000">
               <div class="col-lg-6">
-                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                <button  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jovany-makingdevs'});return false;" class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i> Schedule Meeting</button>
               </div>
               <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -205,8 +194,7 @@
             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="1000">
               <div class="col-lg-6">
-                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/candidaterrrtemp'});return false;" class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i> Schedule Meeting</button>
               </div>
               <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -250,8 +238,7 @@
             <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="1000">
               <div class="col-lg-6">
-                <a href="#" class="btn btn-modern btn-dark mt-3">Get In Touch</a>
-                <a href="#" class="btn btn-modern btn-primary mt-3">Hire Me</a>
+                <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/candidateitowlus002'});return false;" class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i> Schedule Meeting</button>
               </div>
               <div class="col-sm-6 text-lg-end my-4 my-lg-0">
                 <strong class="text-uppercase text-1 me-3 text-dark">follow me</strong>
@@ -347,6 +334,7 @@
 <script src="vendor/js/jquery.magnific-popup.min.js"></script>
 <script src="vendor/js/jquery.vide.min.js"></script>
 <script src="vendor/js/vivus.min.js"></script>
+<script src="js/portafolio.js"></script>
 
 <!-- Theme Base, Components and Settings -->
 <script src="vendor/js/theme.js"></script>
