@@ -40,11 +40,13 @@
 
 	<!-- Demo CSS -->
 	<link rel="stylesheet" href="vendor/css/demo-landing.css">
+	<link rel="stylesheet" href="vendor/css/demo-medical.css">
 	<link rel="stylesheet" href="css/index.css">
 
 	<!-- Skin CSS -->
 	<link id="skinCSS" rel="stylesheet" href="vendor/css/skin-landing.css">
 	<link id="skinCSS" rel="stylesheet" href="vendor/css/default.css">
+	<link id="skinCSS" rel="stylesheet" href="vendor/css/skin-medical.css">
 
 	<!-- Theme Custom CSS -->
 	<link rel="stylesheet" href="vendor/css/custom.css">
@@ -59,32 +61,47 @@
 	<body data-plugin-page-transition>
 		<div class="body">
 			<header id="header" class="header-transparent header-effect-shrink"
-				data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
-				<div class="header-body border-top-0 colorGeneralPage box-shadow-none">
-					<div class="header-container container">
-						<div class="header-row">
-							<div class="header-column">
-								<div class="header-row">
-									<div class="">
-										<a href="home.html"><img height="auto" data-sticky-width="82" data-sticky-height="40"
-												data-sticky-top="0" src="img/head-title.PNG" style="width:80px"></a>
-									</div>
-								</div>
-							</div>
-							<div class="header-column justify-content-end">
-								<div class="header-row">
-									<div
-										class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-no-transform header-nav-bottom-line-active-text-light header-nav-bottom-line-effect-1 header-nav-light-text header-nav-dropdowns-dark">
-										<div
-											class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</header>
+      data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
+      <div class="header-body border-top-0 colorGeneralPage box-shadow-none">
+        <div class="header-container container">
+          <div class="header-row">
+            <div class="header-column">
+              <div class="header-row">
+                <div class="">
+                  <a href="home.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
+                      data-sticky-top="0" src="img/head-title.PNG" style="width:80px"></a>
+                </div>
+              </div>
+            </div>
+            <div class="header-column justify-content-end">
+              <div class="header-row">
+                <div
+                  class="header-nav header-nav-line header-nav-bottom-line header-nav-bottom-line-no-transform header-nav-bottom-line-active-text-light header-nav-bottom-line-effect-1 header-nav-light-text header-nav-dropdowns-dark">
+                  <div
+                    class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1">
+                    <nav class="collapse">
+                      <ul class="nav nav-pills" id="mainNav">
+                        <li class="dropdown">
+                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="home.html">
+                            Home
+                          </a>
+
+                        </li>
+                        <li class="dropdown dropdown-mega">
+                          <a class="dropdown-item textSize" href="portafolio.html">
+                            Briefcase
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
 			<div role="main" class="main">
 				<section class="section border-0 video overlay overlay-show overlay-op-8 m-0" data-video-path="video/Owl1Square" data-plugin-video-background data-plugin-options="{'posterType': 'jpg', 'position': '50% 50%'}" style="height: 100vh;">
 					<div class="container position-relative z-index-3 h-100">
