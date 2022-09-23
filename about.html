@@ -37,11 +37,11 @@
   <link rel="stylesheet" href="vendor/css/theme-shop.css">
 
   <!-- Demo CSS -->
-  <link rel="stylesheet" href="vendor/css/demo-landing.css">
+  <link rel="stylesheet" href="vendor/css/demo-barber.css">
   <link rel="stylesheet" href="css/index.css">
 
   <!-- Skin CSS -->
-  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-landing.css">
+  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-barber.css">
   <link id="skinCSS" rel="stylesheet" href="vendor/css/default.css">
 
   <!-- Theme Custom CSS -->
@@ -56,7 +56,7 @@
 
 <body>
   <div class="body">
-    <header id="header" class="header-transparent header-effect-shrink"
+		<header id="header" class="header-transparent header-effect-shrink"
       data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
       <div class="header-body border-top-0 colorGeneralPage box-shadow-none">
         <div class="header-container container">
@@ -64,8 +64,8 @@
             <div class="header-column">
               <div class="header-row">
                 <div class="">
-                  <a href="index.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
-                      data-sticky-top="0" src="img/head.PNG" style="width:100px"></a>
+                  <a href="home.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
+                      data-sticky-top="0" src="img/head-title.PNG" style="width:80px"></a>
                 </div>
               </div>
             </div>
@@ -78,27 +78,16 @@
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
                         <li class="dropdown">
-                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="index.html">
+                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="home.html">
                             Home
                           </a>
-
                         </li>
-                        <li class="dropdown">
-                          <a class="dropdown-item dropdown-toggle textSize" href="about.html">
-                            About <i class="p-2 p-events-none"><img src="img/down-arrow.png" /></i>
-                          </a>
-                          <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="careers.html">Careers</a></li>
-                          </ul>
-                        </li>
+												<li class="dropdown dropdown-mega">
+													<a class="dropdown-item textSize" href="about.html">About us</a>
+												</li>
                         <li class="dropdown dropdown-mega">
-                          <a class="dropdown-item textSize" href="team.html">
-                            Team
-                          </a>
-                        </li>
-                        <li class="dropdown">
-                          <a class="dropdown-item textSize" href="contac.html">
-                            Contact
+                          <a class="dropdown-item textSize" href="candidates.html">
+                            Candidates
                           </a>
                         </li>
                       </ul>
@@ -113,26 +102,42 @@
     </header>
 
     <div role="main" class="main">
-      <section
-        class="page-header page-header-modern page-header-background page-header-background-md overlay overlay-color-dark overlay-show overlay-op-7"
-        style="background-image: url(img/abog.jpeg);">
-        <div class="container">
-          <div class="row mt-5">
-            <div class="col-md-12 align-self-center p-static order-2 text-center">
-              <h1 class="text-9 font-weight-bold">About Us</h1>
-              <span class="sub-title">The perfect choice for your next project</span>
+      <section id="home" class="section overlay overlay-show overlay-op-7 animated fadeIn border-0 m-0" style="background-image: url(img/head.PNG); background-size: cover; background-position: center; height: 100vh;">
+        <div class="container position-relative z-index-3 h-100">
+            <div class="row justify-content-center align-items-center h-100">
+                <div class="col-lg-7 text-center">
+                    <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                        <h2 class="position-relative text-color-light text-5 line-height-5 font-weight-light ls-0 px-3 mb-2 appear-animation" data-appear-animation="blurIn" data-plugin-options="{'minWindowWidth': 0}">
+                            <span class="position-absolute right-100pct top-50pct transform3dy-n50 opacity-7">
+                                <img src="vendor/img/bar.png" class="w-auto appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                            </span>
+                            IT OWL
+                            <span class="position-absolute left-100pct top-50pct transform3dy-n50 opacity-7">
+                                <img src="vendor/img/bar.png" class="w-auto appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1000" data-plugin-options="{'minWindowWidth': 0}" alt="" />
+                            </span>
+                        </h2>
+                        <h1 class="text-color-light font-weight-extra-bold text-15 line-height-2 mb-3 appear-animation" data-appear-animation="blurIn" data-appear-animation-delay="1100" data-plugin-options="{'minWindowWidth': 0}">ABOUT US</h1>
+                        <p class="position-relative colorCards text-color-light line-height-5 font-weight-light text-3 ls-0 py-2 px-4 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1500" data-plugin-options="{'minWindowWidth': 0}">
+                            <span class="position-absolute right-100pct top-50pct transform3dy-n50">
+                                <span class="d-block custom-slider-dot colorCards me-3 appear-animation" data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="1800" data-plugin-options="{'minWindowWidth': 0}"></span>
+                            </span>
+                            <span class="text-color-light custom-primary-font">LOS ANGELES / CA</span>
+                            <span class="vertical-divider mx-3 border-color-light opacity-3 my-1"></span>
+                            <span class="text-color-light custom-primary-font">EST 2020</span>
+                            <span class="position-absolute left-100pct top-50pct transform3dy-n50">
+                                <span class="d-block custom-slider-dot colorCards ms-3 appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="1800" data-plugin-options="{'minWindowWidth': 0}"></span>
+                            </span>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-12 align-self-center order-1">
-              <ul class="breadcrumb breadcrumb-light d-block text-center">
-                <li><a href="index.html">Home</a></li>
-                <li class="active">About</li>
-              </ul>
+            <div class="position-absolute bottom-0 left-50pct transform3dx-n50">
+              <a href="#main" class="slider-scroll-button position-absolute bottom-10 left-50pct transform3dx-n50" data-hash data-hash-offset="80">Sroll To Bottom</a>
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
-      <div class="container">
+      <div id="main" class="container">
 
         <div class="row pt-5">
           <div class="col">
@@ -202,10 +207,10 @@
             </div>
             <div class="col-sm-8 col-md-6 col-lg-4 offset-sm-4 offset-md-4 offset-lg-2 position-relative mt-sm-5"
               style="top: 1.7rem;">
-              <img src="img/team2.png" class="img-fluid position-absolute d-none d-sm-block appear-animation"
+              <img src="img/team2.jpg" class="img-fluid position-absolute d-none d-sm-block appear-animation"
                 data-appear-animation="expandIn" data-appear-animation-delay="300" style="top: 10%; left: -50%;"
                 alt="" />
-              <img src="img/abog.jpeg" class="img-fluid position-absolute d-none d-sm-block appear-animation"
+              <img src="img/team3.jpeg" class="img-fluid position-absolute d-none d-sm-block appear-animation"
                 data-appear-animation="expandIn" style="top: -33%; left: -29%;" alt="" />
               <img src="img/head.PNG" class="img-fluid position-relative appear-animation mb-2"
                 data-appear-animation="expandIn" data-appear-animation-delay="600" alt="" />
@@ -340,3 +345,5 @@
 
 <!-- Theme Initialization Files -->
 <script src="vendor/js/theme.init.js"></script>
+
+<script src="vendor/js/demo-barber.js"></script>
