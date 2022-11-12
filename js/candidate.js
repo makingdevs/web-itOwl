@@ -1,34 +1,22 @@
 const sendCandidate = (name, phone, mensaje, email) =>  {
   const message = `Hi! \n
-  I want to communicate with you
-
+  I want to communicate with you\n
                         My name is: ${name}
                         Phone: ${phone}
-                        Email: ${email}
+                        Email: ${email}\n
+                        Message: ${mensaje}\n
+                        1.- Download the file Candidate Questionary Skills, CQS.xlsx. \n
+2.- Fill up the questionary. \n
+3.- Save the questionary with your name in this form:  \n
+a. Name MiddleName FirstLastName SecondLastName CQS.xlsx,  \n
+b. Example: “Maria Antonieta Galvez Fuentes CQS.xlsx” \n
+4.- In case you don’t legally use one or more of the parts, omit them.\n
+a. Example: “Jose Smith” \n
 
-                        Message: ${mensaje}
-
-                        1.- Download the file Candidate Questionary Skills, CQS.xlsx. 
-
-2.- Fill up the questionary. 
-
-3.- Save the questionary with your name in this form:  
-
-      a. Name MiddleName FirstLastName SecondLastName CQS.xlsx,  
-
-      b. Example: “Maria Antonieta Galvez Fuentes CQS.xlsx” 
-
-4.- In case you don’t legally use one or more of the parts, omit them.  
-
-      a. Example: “Jose Smith” 
-
-5.- Send it back on the Web Page with your resume save it with the same form,  
-
-      Example: 
-
-      a. “Maria Antonieta Galvez Fuentes Resume.docx” 
-
-      b. “Jose Smith Resume.docx”`.replace(/  +/g, '');
+5.- Send it back on the Web Page with your resume save it with the same form, \n
+Example: \n
+a. “Maria Antonieta Galvez Fuentes Resume.docx” \n
+b. “Jose Smith Resume.docx”`.replace(/  +/g, '');
 
   //window.open(`https://api.whatsapp.com/send?phone=525583817789&text=${encodeURIComponent(message)}`, "_target")
   window.open(`mailto:ruthamol@itowlus.com?subject=Business IT OWL&body=${encodeURIComponent(message)}`, "_target")
