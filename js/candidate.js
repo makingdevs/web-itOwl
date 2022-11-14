@@ -8,7 +8,7 @@ const sendCandidate = (name, phone, mensaje, email) =>  {
                         1.- Download the file Candidate Questionary Skills, CQS.xlsx. \n
 2.- Fill up the questionary. \n
 3.- Save the questionary with your name in this form:  \n
-a. Name MiddleName FirstLastName SecondLastName CQS.xlsx,  \n
+            \n a. Name MiddleName FirstLastName SecondLastName CQS.xlsx,  \n
 b. Example: “Maria Antonieta Galvez Fuentes CQS.xlsx” \n
 4.- In case you don’t legally use one or more of the parts, omit them.\n
 a. Example: “Jose Smith” \n
