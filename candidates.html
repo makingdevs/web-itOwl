@@ -407,3 +407,27 @@
 <!-- Theme Initialization Files -->
 <script src="vendor/js/theme.init.js"></script>
 <script src="js/candidate.js"></script>
+
+<script>
+  // Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC2xRHqY5qZJLBq0sdrUGKfzPt661J6HtQ",
+  authDomain: "web-itowl.firebaseapp.com",
+  projectId: "web-itowl",
+  storageBucket: "web-itowl.appspot.com",
+  messagingSenderId: "623417420128",
+  appId: "1:623417420128:web:927bb056bd89ebea5f9605",
+  measurementId: "G-525EVSCZ50"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
+</script>
