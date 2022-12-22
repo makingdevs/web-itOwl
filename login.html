@@ -37,12 +37,11 @@
   <link rel="stylesheet" href="vendor/css/theme-shop.css">
 
   <!-- Demo CSS -->
-  <link rel="stylesheet" href="vendor/css/demo-barber.css">
+  <link rel="stylesheet" href="vendor/css/demo-landing.css">
   <link rel="stylesheet" href="css/index.css">
 
   <!-- Skin CSS -->
-  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-barber.css">
-  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-corporate-20.css">
+  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-landing.css">
   <link id="skinCSS" rel="stylesheet" href="vendor/css/default.css">
 
   <!-- Theme Custom CSS -->
@@ -53,9 +52,12 @@
   <script src="vendor/js/modernizr.min.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
+  <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+  <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+
 </head>
 
-<body>
+<body data-plugin-page-transition>
   <div class="body">
 		<header id="header" class="header-transparent header-effect-shrink"
       data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
@@ -88,20 +90,6 @@
 														<a class="dropdown-item textSize dropdown-toggle" href="about.html">
 															About Us
 														</a>
-														<ul class="dropdown-menu">
-															<li class="">
-																<a class="" href="#recruit">Recruit</a>
-															</li>
-															<li class="">
-																<a class="" href="#">Legal</a>
-															</li>
-															<li class="">
-																<a class="" href="#">Administrative</a>
-															</li>
-															<li class="">
-																<a class="" href="#">Infrastructure</a>
-															</li>
-														</ul>
 													</li>
 												</li>
                         <li class="dropdown dropdown-mega">
@@ -122,7 +110,61 @@
     </header>
 
     <div role="main" class="main">
-      
+
+      <div role="main" class="main">
+        <section class="section section-overlay-opacity section-overlay-opacity-scale-7 border-0 m-0"
+          style="background-image: url(img/login.jpeg); background-size: cover; background-position: center;">
+          <div class="container py-5">
+            <div class="row align-items-center justify-content-center">
+              <div class="col-lg-6 text-center mb-5 mb-lg-0">
+                <div class="d-flex flex-column align-items-center justify-content-center h-100">
+                  <h1 class="text-color-light font-weight-extra-bold text-12 mb-2 appear-animation"
+                    data-appear-animation="animate__animated animate__zoomIn" data-appear-animation-delay="1300"
+                    data-plugin-options="{'minWindowWidth': 0}">LOGIN</h1>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="slider-contact-form-wrapper colorcardContac rounded p-5 appear-animation"
+                  data-appear-animation="fadeInLeftShorter" data-appear-animation-delay="3000"
+                  data-appear-animation-duration="1s">
+                  <div class="row">
+                    <div class="col text-center">
+                      <h2 class="font-weight-semi-bold text-color-light text-7 mb-2"> Login for IT OWL
+                      </h2>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col">
+                      <form class="contact-form form-style-2 form-errors-light" target="_blank" method="POST"
+                        active="">
+
+                        <div class="row">
+                          <div class="form-group col-lg-6" style="width: 100%">
+                            <input type="text" value="" data-msg-required="Por favor ingrese su nombre" maxlength="100"
+                              class="form-control" name="name" id="name" placeholder="Name" required>
+                          </div>
+                          <div class="form-group col-lg-6" style="width: 100%">
+                            <input type="password" value="" data-msg-required="Por favor ingrese su password." maxlength="100"
+                              class="form-control" name="" id="" placeholder="Password" required>
+                          </div>
+                        </div>
+                        <div class="row">
+                          <div class="form-group col text-center">
+                            <button id="" class="btn btn colorGeneral px-4 py-3"
+                              href=""
+                              data-loading-text="Loading..." target="_blank">LOG IN
+                            </button>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
     </div>
 
   <!-- FOOTER -->
@@ -187,6 +229,7 @@
 <script src="vendor/js/jquery.magnific-popup.min.js"></script>
 <script src="vendor/js/jquery.vide.min.js"></script>
 <script src="vendor/js/vivus.min.js"></script>
+<script src="js/portafolio.js"></script>
 
 <!-- Theme Base, Components and Settings -->
 <script src="vendor/js/theme.js"></script>
@@ -196,5 +239,4 @@
 
 <!-- Theme Initialization Files -->
 <script src="vendor/js/theme.init.js"></script>
-
-<script src="vendor/js/demo-barber.js"></script>
+<script src="js/candidate.js"></script>
