@@ -1,9 +1,9 @@
 function go(){
 
-  if (document.form.password.value=='CONTRASEÑA' && document.form.login.value=='USUARIO'){ 
+  if (document.form.password.value=='test' && document.form.login.value=='test'){ 
           document.form.submit(); 
       } 
       else{ 
-           alert("Porfavor ingrese, nombre de usuario y contraseña correctos."); 
+           alert("Please enter correct username and password."); 
       } 
   } 
