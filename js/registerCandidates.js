@@ -1,6 +1,11 @@
-import { saveCandidate } from "./collection/candidate.js"
+import { saveCandidate, getCandidates } from "./collection/candidate.js"
 
-window.addEventListener("DOMContentLoaded", () => {
+window.addEventListener('DOMContentLoaded', async () => {
+  const querySnapshot = await getCandidates()
+
+  querySnapshot.forEach(doc => {
+    console.log(doc.data())
+  });
 
 })
 
