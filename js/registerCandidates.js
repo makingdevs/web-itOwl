@@ -14,7 +14,7 @@ window.addEventListener('DOMContentLoaded', async () => {
           <td> ${candidates.name}</td>
           <td> ${candidates.description}</td>
           <td>
-            <button class="btn-delete" data-id="${doc.id}" >Deleted</button>
+            <button class="btn-delete btn btn-danger" data-id="${doc.id}" >Deleted</button>
           </td>
         </tr>
       `;
