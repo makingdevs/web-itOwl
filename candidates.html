@@ -132,37 +132,35 @@
         </div>
       </section>
 
-      <div class="container py-4">
-
-        <div class="row">
+      <div class="container py-4" id="app">
+        <div class="row mt-5" v-for="candidate in app.candidates" >
           <div class="col-md-7 order-2">
             <div class="overflow-hidden">
-              <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation"
-                data-appear-animation="maskUp" data-appear-animation-delay="300">John Doe</h2>
+              <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 "
+                data-appear-animation="maskUp" data-appear-animation-delay="300">{{candidate.name}}</h2>
             </div>
             <div class="overflow-hidden mb-3">
-              <p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation"
-                data-appear-animation="maskUp" data-appear-animation-delay="500">CEO</p>
+              <p class="font-weight-bold text-primary text-uppercase mb-0 "
+                data-appear-animation="maskUp" data-appear-animation-delay="500">{{candidate.work}}</p>
             </div>
-            <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-              IT OWL is a <a href="#">IT OWL</a>
-              domestic limited liability company (LLC) certified by Robert B. Evnen, Secretary of State in Nebraska.</p>
-            <p class="pb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-              Consectetur adipiscing elit. Aliquam iaculis sit amet enim ac sagittis. Curabitur eget leo varius,
-              elementum mauris eget, egestas quam.</p>
-            <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter"
+            <p class="lead " data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+              <a href="#">IT OWL: </a>
+              {{candidate.description}}</p>
+            <hr class="solid my-4 " data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="900">
-            <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
+            <div class="row align-items-center " data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="1000">
               <div class="col-lg-6">
-                <button  onclick="Calendly.initPopupWidget({url: 'https://calendly.com/jovany-makingdevs'});return false;" class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i> 
+                <button
+                  @click="() => executeCalendly(candidate.calendar)"
+                  class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i>
                   Schedule Meeting</button>
-                <button class="btn btn-modern btn-dark mt-3">SEE MORE +</button>
+                <button class="btn btn-modern btn-dark mt-3" @click="goToPost(candidate.post)">SEE MORE +</button>
               </div>
             </div>
           </div>
-          <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-            <img src="img/team4.jpeg" class="img-fluid" alt="">
+          <div class="col-md-5 order-md-2 mb-4 mb-lg-0 " data-appear-animation="fadeInRightShorter">
+            <img :src="candidate.image" class="img-fluid" alt="">
           </div>
         </div>
 
@@ -171,75 +169,6 @@
             <hr class="solid my-5">
           </div>
         </div>
-
-        <div class="row">
-          <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInLeftShorter">
-            <img src="img/team1.jpeg" class="img-fluid" alt="">
-          </div>
-          <div class="col-md-7 order-2">
-            <div class="overflow-hidden">
-              <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation"
-                data-appear-animation="maskUp" data-appear-animation-delay="300">Jessica Doe</h2>
-            </div>
-            <div class="overflow-hidden mb-3">
-              <p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation"
-                data-appear-animation="maskUp" data-appear-animation-delay="500">Marketing</p>
-            </div>
-            <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-              IT OWL, LLC filed a Certificate of Organization on December <a href="#">IT OWL</a> 28, 2021, and was
-              signed by the Secretary of State in Capitol Lincoln, Nebraska on December 30, 2021.</p>
-            <p class="pb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-              Consectetur adipiscing elit. Aliquam iaculis sit amet enim ac sagittis. Curabitur eget leo varius,
-              elementum mauris eget, egestas quam.</p>
-            <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter"
-              data-appear-animation-delay="900">
-            <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
-              data-appear-animation-delay="1000">
-              <div class="col-lg-6">
-                <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/candidaterrrtemp'});return false;" class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i> Schedule Meeting</button>
-                <button class="btn btn-modern btn-dark mt-3">SEE MORE +</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col">
-            <hr class="solid my-5">
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-7 order-2">
-            <div class="overflow-hidden">
-              <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 appear-animation"
-                data-appear-animation="maskUp" data-appear-animation-delay="300">Melinda Doe</h2>
-            </div>
-            <div class="overflow-hidden mb-3">
-              <p class="font-weight-bold text-primary text-uppercase mb-0 appear-animation"
-                data-appear-animation="maskUp" data-appear-animation-delay="300">Design</p>
-            </div>
-            <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-              Contract review <a href="#">IT OWL</a>
-              managed by Baird Holm LLP Omaha NE.</p>
-            <p class="pb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-              Consectetur adipiscing elit. Aliquam iaculis sit amet enim ac sagittis. Curabitur eget leo varius,
-              elementum mauris eget, egestas quam.</p>
-            <hr class="solid my-4 appear-animation" data-appear-animation="fadeInUpShorter"
-              data-appear-animation-delay="900">
-            <div class="row align-items-center appear-animation" data-appear-animation="fadeInUpShorter"
-              data-appear-animation-delay="1000">
-              <div class="col-lg-6">
-                <button onclick="Calendly.initPopupWidget({url: 'https://calendly.com/candidateitowlus002'});return false;" class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i> Schedule Meeting</button>
-                <button class="btn btn-modern btn-dark mt-3">SEE MORE +</button>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-5 order-md-2 mb-4 mb-lg-0 appear-animation" data-appear-animation="fadeInRightShorter">
-            <img src="img/team5.jpeg" class="img-fluid" alt="">
-          </div>
-        </div>
-
       </div>
 
       <section id="contact" class="section section-overlay-opacity section-overlay-opacity-scale-7 border-0 m-0"
@@ -381,6 +310,7 @@
 </body>
 
 </html>
+<script type="module" src="js/candidate.js"></script>
 
 <script src="vendor/js/jquery.min.js"></script>
 <script src="vendor/js/jquery.easing.min.js"></script>
@@ -396,7 +326,6 @@
 <script src="vendor/js/jquery.magnific-popup.min.js"></script>
 <script src="vendor/js/jquery.vide.min.js"></script>
 <script src="vendor/js/vivus.min.js"></script>
-<script src="js/portafolio.js"></script>
 
 <!-- Theme Base, Components and Settings -->
 <script src="vendor/js/theme.js"></script>
@@ -406,5 +335,3 @@
 
 <!-- Theme Initialization Files -->
 <script src="vendor/js/theme.init.js"></script>
-<script src="js/candidate.js"></script>
-<script type="module" src="js/firebase.js"></script>
