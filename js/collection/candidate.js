@@ -2,8 +2,8 @@
 import { collection, addDoc, getDocs, onSnapshot, deleteDoc, doc, getDoc, updateDoc } from "https://www.gstatic.com/firebasejs/9.16.0/firebase-firestore.js";
 import { db } from '../config/firebase.js';
 
-export const saveCandidate = (name, description, work, calendar, post) =>
-  addDoc(collection(db, "candidates"), {name: name, description: description, work: work, calendar: calendar, post: post})
+export const saveCandidate = (name, description, work, calendar, post, image) =>
+  addDoc(collection(db, "candidates"), {name: name, description: description, work: work, calendar: calendar, post: post, image: image})
 
 export const getCandidates = () => getDocs(collection(db, "candidates"))
 

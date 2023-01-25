@@ -1,3 +1,6 @@
+import { createApp, reactive } from 'https://unpkg.com/vue@3/dist/vue.esm-browser.js'
+import { onGetCandidates } from "./collection/candidate.js"
+
 const sendCandidate = (name, phone, mensaje, email) =>  {
   const message = `Hi! \n
   I want to communicate with you\n
@@ -36,3 +39,37 @@ const submitFormCandidate = function(event) {
 var form = document.getElementById("form__submit");
 // attach event listener
 form.addEventListener("submit", submitFormCandidate, true);
+
+
+createApp({
+  setup(props) {
+    const app = reactive({
+      candidates: []
+    })
+    console.log("init vue")
+    onGetCandidates((querySnapshot) => {
+      querySnapshot.forEach(element => {
+        app.candidates.push(element.data());
+      });
+    })
+
+    const executeCalendly = (url) => {
+      Calendly.initPopupWidget({url: url})
+    }
+    
+    const goToPost = (post) => {
+      window.open(post, '_blank');
+    }
+
+    return {
+      app,
+      executeCalendly,
+      goToPost,
+    }
+  },
+  data() {
+    return {
+      message: 'Hello Vue!'
+    }
+  }
+}).mount('#app')
