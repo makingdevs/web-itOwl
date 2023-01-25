@@ -20,6 +20,9 @@ window.addEventListener('DOMContentLoaded', async () => {
           <td> ${candidates.calendar}</td>
           <td> ${candidates.post}</td>
           <td>
+            <a href='${candidates.image}'> url</a>
+          </td>
+          <td>
             <button class="btn-delete btn btn-danger" data-id="${doc.id}" >Deleted</button>
             <button class="btn-edit btn btn-primary" data-id="${doc.id}" >Edit</button>
           </td>
@@ -47,6 +50,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         candidateForm["candidate-work"].value = candidate.work
         candidateForm["candidate-calendar"].value = candidate.calendar
         candidateForm["candidate-post"].value = candidate.post
+        candidateForm["candidate-image"].value = candidate.image
 
         editStatus = true
         idCandidate = doc.id
@@ -66,16 +70,18 @@ candidateForm.addEventListener("submit", (e) => {
   const work =  candidateForm["candidate-work"];
   const calendar =  candidateForm["candidate-calendar"];
   const post =  candidateForm["candidate-post"];
+  const image =  candidateForm["candidate-image"];
 
   if(!editStatus) {
-    saveCandidate(name.value, description.value, work.value, calendar.value, post.value);
+    saveCandidate(name.value, description.value, work.value, calendar.value, post.value, image.value);
   } else{
     updateCandidate(idCandidate, {
       name: name.value,
       description: description.value,
       work: work.value,
       calendar: calendar.value,
-      post: post.value
+      post: post.value,
+      image: image.value,
     });
 
     editStatus = false;
