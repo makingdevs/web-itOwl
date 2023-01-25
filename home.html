@@ -63,7 +63,7 @@
 
 	<body data-plugin-page-transition>
 		<div class="body">
-		<header id="header" class="header-transparent header-effect-shrink"
+			<header id="header" class="header-transparent header-effect-shrink"
       data-plugin-options="{'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyStartAt': 70, 'stickyChangeLogo': false, 'stickyHeaderContainerHeight': 70}">
       <div class="header-body border-top-0 colorGeneralPage box-shadow-none">
         <div class="header-container container">
@@ -83,9 +83,29 @@
                   <div
                     class="header-nav-main header-nav-main-square header-nav-main-dropdown-no-borders header-nav-main-text-capitalize header-nav-main-text-size-2 header-nav-main-mobile-dark header-nav-main-effect-1 header-nav-main-sub-effect-1">
                     <nav class="collapse">
+                      <ul class="nav nav-pills" id="mainNav">
+                        <li class="dropdown">
+                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="home.html">
+                            Home
+                          </a>
+                        </li>
+												<li class="dropdown dropdown-mega">
+                          <li class="dropdown">
+														<a class="dropdown-item textSize dropdown-toggle" href="about.html">
+															About Us
+														</a>
+													</li>
+												</li>
+                        <li class="dropdown dropdown-mega">
+                          <a class="dropdown-item textSize" href="candidates.html">
+                            Candidates
+                          </a>
+                        </li>
+                      </ul>
                     </nav>
                   </div>
                 </div>
+                <button class="btn header-btn-collapse-nav" data-bs-toggle="collapse" data-bs-target=".header-nav-main nav"><i class="fa fa-bars"></i></button>
               </div>
             </div>
           </div>
