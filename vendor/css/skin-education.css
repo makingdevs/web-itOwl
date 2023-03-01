@@ -1,47 +1,47 @@
 ::-moz-selection {
 	color: #FFF;
-	background: #b3642a;
+	background: #3c3a56;
 }
 
 ::selection {
 	color: #FFF;
-	background: #b3642a;
+	background: #3c3a56;
 }
 
 a {
-	color: #b3642a;
+	color: #3c3a56;
 }
 
 a:hover {
-	color: #c8702f;
+	color: #0088cc;
 }
 
 a:focus {
-	color: #c8702f;
+	color: #3c3a56;
 }
 
 a:active {
-	color: #9e5825;
+	color: #0088cc;
 }
 
 html .text-color-primary,
 html .text-primary {
-	color: #b3642a !important;
+	color: #0088cc !important;
 }
 
 html .text-color-hover-primary:hover,
 html .text-hover-primary:hover {
-	color: #b3642a !important;
+	color: #3c3a56 !important;
 }
 
 html .text-color-secondary,
 html .text-secondary {
-	color: #C06B2D !important;
+	color: #3c3a56 !important;
 }
 
 html .text-color-hover-secondary:hover,
 html .text-hover-secondary:hover {
-	color: #C06B2D !important;
+	color: #3c3a56 !important;
 }
 
 html .text-color-tertiary,
