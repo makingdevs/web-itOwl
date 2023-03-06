@@ -269,7 +269,7 @@ html.sticky-header-active #header .header-body {
 }
 
 .custom-thumb-info-style-1 .thumb-info-footer .nav > li > a {
-		color: #515658;
+		color: #08c;
 		transition: ease color 300ms;
 }
 
@@ -382,7 +382,7 @@ html.sticky-header-active #header .header-body {
 * Rate
 */
 .rate > i {
-		color: #ee970e;
+		color: #08c;
 }
 
 /*
@@ -545,7 +545,7 @@ ul.custom-comments-style .comment-block {
 * Footer
 */
 #footer p, #footer a:not(.btn):not(.no-footer-css), #footer li, #footer span {
-		color: #8d9097;
+		color: #08c;
 		font-size: 14px;
 }
 
@@ -611,5 +611,5 @@ ul.custom-comments-style .comment-block {
 }
 
 #footer .footer-copyright p {
-		color: #8d9097;
+		color: #08c;
 }
