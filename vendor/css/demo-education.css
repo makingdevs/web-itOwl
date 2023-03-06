@@ -545,7 +545,7 @@ ul.custom-comments-style .comment-block {
 * Footer
 */
 #footer p, #footer a:not(.btn):not(.no-footer-css), #footer li, #footer span {
-		color: #08c;
+		color: rgb(255, 255, 255);
 		font-size: 14px;
 }
 
