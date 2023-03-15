@@ -133,7 +133,7 @@ html .svg-stroke-color-hover-primary svg:hover polygon {
 }
 
 html .svg-fill-color-secondary {
-	fill: #C06B2D !important;
+	fill: #08c !important;
 }
 
 html .svg-fill-color-secondary svg path,
@@ -141,11 +141,11 @@ html .svg-fill-color-secondary svg rect,
 html .svg-fill-color-secondary svg line,
 html .svg-fill-color-secondary svg polyline,
 html .svg-fill-color-secondary svg polygon {
-	fill: #C06B2D !important;
+	fill: #08c !important;
 }
 
 html .svg-fill-color-hover-secondary:hover {
-	fill: #C06B2D !important;
+	fill: #08c !important;
 }
 
 html .svg-fill-color-hover-secondary svg:hover path,
@@ -169,7 +169,7 @@ html .svg-stroke-color-secondary svg polygon {
 }
 
 html .svg-stroke-color-hover-secondary:hover {
-	stroke: #C06B2D !important;
+	stroke: #08c !important;
 }
 
 html .svg-stroke-color-hover-secondary svg:hover path,
@@ -177,7 +177,7 @@ html .svg-stroke-color-hover-secondary svg:hover rect,
 html .svg-stroke-color-hover-secondary svg:hover line,
 html .svg-stroke-color-hover-secondary svg:hover polyline,
 html .svg-stroke-color-hover-secondary svg:hover polygon {
-	stroke: #C06B2D !important;
+	stroke: #08c !important;
 }
 
 html .svg-fill-color-tertiary {
@@ -1099,7 +1099,7 @@ html .btn-primary {
 
 html .btn-primary:hover,
 html .btn-primary.hover {
-	background-color: #cf7634;
+	background-color: #08c;
 	border-color: #d27d3e #d27d3e #08c;
 	color: #FFF;
 }
@@ -6704,19 +6704,19 @@ html .slide-overlay.slide-overlay-gradient .slotholder:after {
 }
 
 #footer .footer-nav.footer-nav-bottom-line nav > ul:not(:hover) > li > a.active {
-	color: #b3642a !important;
+	color: #08c !important;
 }
 
 #footer .footer-nav.footer-nav-bottom-line nav > ul:not(:hover) > li > a.active:before {
-	background: #b3642a !important;
+	background: #08c !important;
 }
 
 #footer .footer-nav.footer-nav-bottom-line nav > ul:hover > li:hover > a {
-	color: #b3642a !important;
+	color: #08c !important;
 }
 
 #footer .footer-nav.footer-nav-bottom-line nav > ul:hover > li:hover > a:before {
-	background: #b3642a !important;
+	background: #08c !important;
 }
 
 .scrollable.colored-slider .scrollable-slider {
@@ -6724,7 +6724,7 @@ html .slide-overlay.slide-overlay-gradient .slotholder:after {
 }
 
 .sample-icon-list .sample-icon a:hover {
-	background-color: #b3642a;
+	background-color: #08c;
 }
 
 .cursor-inner {
