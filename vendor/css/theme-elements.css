@@ -2525,13 +2525,13 @@ html[dir="rtl"] .input-group-btn:not(:last-child) > .btn:not(:first-child) {
 	transition-delay: 200ms;
 }
 
-.hamburguer-btn .close {
+.hamburguer-btn .Closed {
 	opacity: 0;
 	pointer-events: none;
 	transition: ease all 300ms;
 }
 
-.hamburguer-btn .close span {
+.hamburguer-btn .Closed span {
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -2542,11 +2542,11 @@ html[dir="rtl"] .input-group-btn:not(:last-child) > .btn:not(:first-child) {
 	transform-origin: 50% 0;
 }
 
-.hamburguer-btn .close span:nth-child(1) {
+.hamburguer-btn .Closed span:nth-child(1) {
 	transform: translateX(-50%) rotate(45deg);
 }
 
-.hamburguer-btn .close span:nth-child(2) {
+.hamburguer-btn .Closed span:nth-child(2) {
 	transform: translateX(-50%) rotate(-45deg);
 }
 
@@ -2558,22 +2558,22 @@ html[dir="rtl"] .input-group-btn:not(:last-child) > .btn:not(:first-child) {
 	width: 0;
 }
 
-.hamburguer-btn.active .close {
+.hamburguer-btn.active .Closed {
 	opacity: 1;
 	transition: ease all 300ms;
 }
 
-.hamburguer-btn.active .close span {
+.hamburguer-btn.active .Closed span {
 	width: 80%;
 	transition: ease all 300ms;
 }
 
-.hamburguer-btn.active .close span:nth-child(2) {
+.hamburguer-btn.active .Closed span:nth-child(2) {
 	transition-delay: 300ms;
 }
 
 .hamburguer-btn.hamburguer-btn-light .hamburguer span,
-.hamburguer-btn.hamburguer-btn-light .close span {
+.hamburguer-btn.hamburguer-btn-light .Closed span {
 	background: #FFF;
 }
 
@@ -2583,20 +2583,20 @@ html.overflow-hidden .hamburguer-btn.hamburguer-btn-side-header-overlay {
 
 /* Hamburguer Sticky Colors */
 html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-light .hamburguer span,
-html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-light .close span,
+html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-light .Closed span,
 .pin-wrapper .sticky-active:not([class*="sticky-wrapper-effect"]) .hamburguer-btn.hamburguer-btn-sticky-light .hamburguer span,
-.pin-wrapper .sticky-active:not([class*="sticky-wrapper-effect"]) .hamburguer-btn.hamburguer-btn-sticky-light .close span,
+.pin-wrapper .sticky-active:not([class*="sticky-wrapper-effect"]) .hamburguer-btn.hamburguer-btn-sticky-light .Closed span,
 .pin-wrapper .sticky-effect-active .hamburguer-btn.hamburguer-btn-sticky-light .hamburguer span,
-.pin-wrapper .sticky-effect-active .hamburguer-btn.hamburguer-btn-sticky-light .close span {
+.pin-wrapper .sticky-effect-active .hamburguer-btn.hamburguer-btn-sticky-light .Closed span {
 	background: #FFF;
 }
 
 html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .hamburguer span,
-html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span,
+html.sticky-header-active .hamburguer-btn.hamburguer-btn-sticky-dark .Closed span,
 .pin-wrapper .sticky-active:not([class*="sticky-wrapper-effect"]) .hamburguer-btn.hamburguer-btn-sticky-dark .hamburguer span,
-.pin-wrapper .sticky-active:not([class*="sticky-wrapper-effect"]) .hamburguer-btn.hamburguer-btn-sticky-dark .close span,
+.pin-wrapper .sticky-active:not([class*="sticky-wrapper-effect"]) .hamburguer-btn.hamburguer-btn-sticky-dark .Closed span,
 .pin-wrapper .sticky-effect-active .hamburguer-btn.hamburguer-btn-sticky-dark .hamburguer span,
-.pin-wrapper .sticky-effect-active .hamburguer-btn.hamburguer-btn-sticky-dark .close span {
+.pin-wrapper .sticky-effect-active .hamburguer-btn.hamburguer-btn-sticky-dark .Closed span {
 	background: #212529;
 }
 
@@ -7939,7 +7939,7 @@ input[type="search" i]::-webkit-search-cancel-button {
 	background: #FFF;
 }
 
-.gdpr-preferences-popup .gdpr-preferences-popup-content .gdpr-close-popup {
+.gdpr-preferences-popup .gdpr-preferences-popup-content .gdpr-Closed-popup {
 	position: absolute;
 	top: 25px;
 	right: 25px;
@@ -8431,12 +8431,12 @@ i.pi.pi-porto-brand:after {
 	transform: translate3d(-50%, -50%, 0);
 }
 
-i.pi.pi-close {
+i.pi.pi-Closed {
 	padding: 0.6em;
 	transform: rotate(45deg);
 }
 
-i.pi.pi-close:before {
+i.pi.pi-Closed:before {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -8446,7 +8446,7 @@ i.pi.pi-close:before {
 	height: 1em;
 }
 
-i.pi.pi-close:after {
+i.pi.pi-Closed:after {
 	content: '';
 	position: absolute;
 	top: 50%;
@@ -8947,9 +8947,9 @@ button.mfp-arrow.mfp-arrow-right:after {
 	height: auto;
 }
 
-/* Close */
-.mfp-close,
-.mfp-close-btn-in .mfp-close {
+/* Closed */
+.mfp-Closed,
+.mfp-Closed-btn-in .mfp-Closed {
 	font-family: "Poppins", Arial, sans-serif;
 	font-weight: 600;
 	font-size: 22px;
@@ -9100,7 +9100,7 @@ button.mfp-arrow.mfp-arrow-right:after {
 	max-width: 900px;
 }
 
-.dialog.mfp-close-out .mfp-close {
+.dialog.mfp-Closed-out .mfp-Closed {
 	top: -50px;
 	right: -15px;
 	color: #FFF;
@@ -10214,7 +10214,7 @@ html.safari.iphone .bounce-loader .bounce3 {
 	border-right: 7px solid transparent;
 }
 
-.map-info-window .map-info-window-close {
+.map-info-window .map-info-window-Closed {
 	position: absolute;
 	top: 3px;
 	right: 3px;
@@ -10468,7 +10468,7 @@ html[xmlns] .clearfix {
 	opacity: 0 !important;
 }
 
-.mfp-demo-options .mfp-close {
+.mfp-demo-options .mfp-Closed {
 	position: fixed;
 	top: 0;
 	right: 17px;
@@ -10905,7 +10905,7 @@ html[xmlns] .clearfix {
 	background: #eb223f;
 }
 
-.notice-top-bar .notice-top-bar-close {
+.notice-top-bar .notice-top-bar-Closed {
 	position: absolute;
 	top: 7px;
 	right: 7px;
@@ -12017,7 +12017,7 @@ Credits: Codyhouse (https://codyhouse.co/gem/360-degrees-product-viewer)
 	display: block;
 }
 
-.modal-header .btn-close {
+.modal-header .btn-Closed {
 	text-indent: -99999px;
 }
 
@@ -13921,7 +13921,7 @@ html.side-panel .side-panel-wrapper {
 	z-index: 9999;
 }
 
-html.side-panel .side-panel-wrapper .side-panel-close {
+html.side-panel .side-panel-wrapper .side-panel-Closed {
 	position: absolute;
 	top: 0;
 	right: 0;

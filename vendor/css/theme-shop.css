@@ -79,8 +79,8 @@ Theme Version:	9.0.0
 	border-bottom: 2px solid transparent;
 }
 
-/* Quick View Popup Fix (When Close) */
-html.lightbox-beforeclose .quick-view {
+/* Quick View Popup Fix (When Closed) */
+html.lightbox-beforeClosed .quick-view {
 	display: none !important;
 }
 

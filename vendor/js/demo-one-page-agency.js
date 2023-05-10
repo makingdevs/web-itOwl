@@ -141,7 +141,7 @@ Theme Version:	9.0.0
 			type: 'ajax',
 			tLoading: '<div class="bounce-loader"><div class="bounce1"></div><div class="bounce2"></div><div class="bounce3"></div></div>',
 			mainClass: 'portfolio-ajax-modal',
-			closeBtnInside: true,
+			ClosedBtnInside: true,
 			gallery: {
 				enabled: true
 			},
@@ -151,13 +151,13 @@ Theme Version:	9.0.0
 					// Wrapper
 					var $wrapper = $('.portfolio-ajax-modal');
 
-					// Close
-					$wrapper.find('a[data-ajax-portfolio-close]').on('click', function(e) {
+					// Closed
+					$wrapper.find('a[data-ajax-portfolio-Closed]').on('click', function(e) {
 						e.preventDefault();
-						$.magnificPopup.close();
+						$.magnificPopup.Closed();
 					});
 
-					// Remove Next and Close
+					// Remove Next and Closed
 					if($('a[data-ajax-on-modal]').length <= 1) {
 						
 						$wrapper.find('a[data-ajax-portfolio-prev], a[data-ajax-portfolio-next]').remove();
@@ -210,7 +210,7 @@ Theme Version:	9.0.0
 
 		overflowY: 'auto',
 
-		closeBtnInside: true,
+		ClosedBtnInside: true,
 		preloader: false,
 
 		midClick: true,

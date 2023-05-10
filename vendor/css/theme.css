@@ -9034,7 +9034,7 @@ html.dark .modal-header h1, html.dark .modal-header h2, html.dark .modal-header 
 	color: #777;
 }
 
-html.dark .modal-header .close {
+html.dark .modal-header .Closed {
 	text-shadow: none;
 	color: #FFF;
 }

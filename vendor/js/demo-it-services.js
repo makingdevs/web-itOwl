@@ -116,7 +116,7 @@ Theme Version:	9.0.0
 			onfocusout: false,
 			errorPlacement: function(error, element) {
 				if (element.attr('type') == 'radio' || element.attr('type') == 'checkbox') {
-					error.appendTo(element.closest('.form-group'));
+					error.appendTo(element.Closedst('.form-group'));
 				} else {
 					error.insertAfter(element);
 				}

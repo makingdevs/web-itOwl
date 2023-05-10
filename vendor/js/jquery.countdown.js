@@ -178,7 +178,7 @@
             this.finalDate = parseDateString(value);
         },
         update: function() {
-            if (this.$el.closest("html").length === 0) {
+            if (this.$el.Closedst("html").length === 0) {
                 this.remove();
                 return;
             }
