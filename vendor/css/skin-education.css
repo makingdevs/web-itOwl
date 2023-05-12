@@ -746,15 +746,15 @@ p.drop-caps.drop-caps-style-2:first-letter {
 }
 
 html .nav-color-primary nav > ul > li > a {
-	color: #08c !important;
+	color: #FFF !important;
 }
 
 html .nav-color-primary:not(.header-nav-main-dropdown-arrow) nav > ul > li > a:before {
-	background-color: #08c !important;
+	background-color: rgb(255, 255, 255) !important;
 }
 
 html .nav-color-primary:not(.header-nav-main-dropdown-arrow) nav > ul > li ul {
-	border-top-color: #08c !important;
+	border-top-color: rgb(255, 255, 255) !important;
 }
 
 html .nav-color-secondary nav > ul > li > a {
@@ -819,24 +819,24 @@ html .nav-color-light:not(.header-nav-main-dropdown-arrow) nav > ul > li ul {
 
 .nav-pills > li.active > a,
 .nav-pills .nav-link.active {
-	background-color: #08c;
+	background-color: #FFF;
 }
 
 .nav-pills > li.active > a:hover,
 .nav-pills .nav-link.active:hover,
 .nav-pills > li.active > a:focus,
 .nav-pills .nav-link.active:focus {
-	background-color: #08c;
+	background-color: #FFF;
 }
 
 .nav-active-style-1 > li > a:hover,
 .nav-active-style-1 > li > a:focus,
 .nav-active-style-1 > li > a.active {
-	border-bottom-color: #08c;
+	border-bottom-color: #FFF;
 }
 
 html .nav-pills-primary a {
-	color: #08c;
+	color: #FFF;
 }
 
 html .nav-pills-primary a:hover {
@@ -853,14 +853,14 @@ html .nav-pills-primary a:active {
 
 html .nav-pills-primary .nav-link.active,
 html .nav-pills-primary > li.active > a {
-	background-color: #08c;
+	background-color: #FFF;
 }
 
 html .nav-pills-primary .nav-link.active:hover,
 html .nav-pills-primary > li.active > a:hover,
 html .nav-pills-primary .nav-link.active:focus,
 html .nav-pills-primary > li.active > a:focus {
-	background-color: #08c;
+	background-color: #FFF;
 }
 
 html .nav-pills-secondary a {
@@ -1008,12 +1008,12 @@ html .nav-pills-light > li.active > a:focus {
 }
 
 .sort-source-wrapper .nav > li.active > a {
-	color: #08c;
+	color: #FFF;
 }
 
 .sort-source-wrapper .nav > li.active > a:hover,
 .sort-source-wrapper .nav > li.active > a:focus {
-	color: #08c;
+	color: #FFF;
 }
 
 .sort-source.sort-source-style-2 > li.active > a:after {
@@ -3065,22 +3065,22 @@ html .inverted-light {
 }
 
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"] {
-	background-color: #08c;
-	border-color: #08c #08c #8a4d20;
+	background-color: #3c3a56;
+	border-color: #3c3a56 #3c3a56 #3c3a56;
 	color: #FFF;
 }
 
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"]:hover,
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"].hover {
-	background-color: #cf7634;
-	border-color: #d27d3e #d27d3e #08c;
+	background-color: #08c;
+	border-color: #08c #08c #08c;
 }
 
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"]:active,
 .owl-carousel:not(.nav-arrows-1):not(.show-nav-title) .owl-nav button[class*="owl-"].active {
-	background-color: #945323;
+	background-color: #08c;
 	background-image: none;
-	border-color: #8a4d20 #8a4d20 #603617;
+	border-color: #08c #08c #08c;
 }
 
 .owl-carousel.nav-with-transparency:not(.nav-style-1):not(.show-nav-title):not(.nav-arrows-1) .owl-nav button[class*="owl-"] {
