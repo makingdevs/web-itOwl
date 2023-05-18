@@ -16,11 +16,14 @@ window.addEventListener('DOMContentLoaded', async () => {
         <tr>
           <td> ${candidates.name}</td>
           <td> ${candidates.work}</td>
-          <td> ${candidates.description}</td>
+          <td style="text-overflow: ellipsis;"> ${candidates.description}</td>
           <td> ${candidates.calendar}</td>
           <td> ${candidates.post}</td>
           <td>
             <a href='${candidates.image}'> url</a>
+          </td>
+          <td>
+            <a href='${candidates.graph}'> url Graph</a>
           </td>
           <td>
             <button class="btn-delete btn btn-danger" data-id="${doc.id}" >Deleted</button>
@@ -51,6 +54,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         candidateForm["candidate-calendar"].value = candidate.calendar
         candidateForm["candidate-post"].value = candidate.post
         candidateForm["candidate-image"].value = candidate.image
+        candidateForm["candidate-graph"].value = candidate.graph
 
         editStatus = true
         idCandidate = doc.id
@@ -71,9 +75,10 @@ candidateForm.addEventListener("submit", (e) => {
   const calendar =  candidateForm["candidate-calendar"];
   const post =  candidateForm["candidate-post"];
   const image =  candidateForm["candidate-image"];
+  const graph = candidateForm["candidate-graph"]
 
   if(!editStatus) {
-    saveCandidate(name.value, description.value, work.value, calendar.value, post.value, image.value);
+    saveCandidate(name.value, description.value, work.value, calendar.value, post.value, image.value, graph.value);
   } else{
     updateCandidate(idCandidate, {
       name: name.value,
@@ -82,6 +87,7 @@ candidateForm.addEventListener("submit", (e) => {
       calendar: calendar.value,
       post: post.value,
       image: image.value,
+      graph: graph.value,
     });
 
     editStatus = false;
