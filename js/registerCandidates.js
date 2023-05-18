@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', async () => {
         <tr>
           <td> ${candidates.name}</td>
           <td> ${candidates.work}</td>
-          <td style="text-overflow: ellipsis;"> ${candidates.description}</td>
+          <td> ${candidates.description}</td>
           <td> ${candidates.calendar}</td>
           <td> ${candidates.post}</td>
           <td>
