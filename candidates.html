@@ -162,7 +162,7 @@
 
       <div class="container py-4" id="app">
 
-        <div class="row mt-5" v-for="candidate in app.candidates" >
+        <div class="row mt-5" v-for="(candidate, index) in app.candidates" >
           <div class="col-md-7 order-2">
             <div class="overflow-hidden">
               <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 "
@@ -174,10 +174,10 @@
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" :id="`modalDescription-${index}`" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
-                <div class="modal-content">
+                <div class="modal-content" >
                   <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">{{candidate.name}}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -211,7 +211,7 @@
                 class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i>
                 Schedule Meeting</button>
                 <button type="button" class="btn btn-modern btn-primary mt-3" style="margin-left: 1%;" data-bs-toggle="modal"
-                data-bs-target="#exampleModal">
+                :data-bs-target="`#modalDescription-${index}`">
                 Description
               </button>
               </div>
