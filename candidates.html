@@ -173,7 +173,7 @@
                 data-appear-animation="maskUp" data-appear-animation-delay="500">{{candidate.work}}</p>
             </div>
 
-            <!-- Modal -->
+            <!-- Modal 1 -->
             <div class="modal fade" :id="`modalDescription-${index}`" tabindex="-1" aria-labelledby="exampleModalLabel"
               aria-hidden="true">
               <div class="modal-dialog">
@@ -190,10 +190,74 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" style="margin-left: 1%;" data-bs-toggle="modal"
+                    :data-bs-target="`#modalResumen-${index}`">
+                    Resumen
+                    </button>
                   </div>
                 </div>
               </div>
             </div>
+            <!-- Modal 1 END-->
+
+            <!-- Modal 2 -->
+            <div class="modal fade" :id="`modalResumen-${index}`" tabindex="-1" aria-labelledby="exampleModalLabel"
+              aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                <div class="modal-content" >
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">{{candidate.name}}</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+                      <u class="textColor">WORK EXPERIENCE</u>
+                    </h4>
+                    <b class="text-start">Global Excel Management | Mexico City, Mexico May 2022 – Present</b> Assistance Coordinator  / Customer Service Representative.
+                    <ol>
+                      <ul>
+                        <div class="d-flex flex-column">
+                          <div class="text-start">● Coordinating Medical assistance around the world</div>
+                          <div class="text-start">● Researching and understanding the best solutions for the client’s requirements.</div>
+                          <div class="text-start">● Providing accurate information to clients and providers. </div>
+                        </div>
+                      </ul>
+                    </ol>
+                    <b>Making Devs (Remote) | Mexico City, Mexico October 2022 – Present </b> Jr. Software Developer.
+                    <ol>
+                      <ul>
+                        <div class="d-flex flex-column">
+                          <div class="text-start">● Developing complete applications with different technologies.</div>
+                          <div class="text-start">● Structuring material for different courses and projects given by the company.</div>
+                        </div>
+                      </ul>
+                    </ol>
+                    <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+                      <u class="textColor">EDUCATION </u>
+                    </h4>
+                    <b>National Autonomous University of Mexico | Mexico City, Mexico Jul 2017 – Present </b> BA Instrument Performance and Education
+                    <div class="d-flex flex-column">
+                      <div>Predicted Grade: First Class </div>
+                      <div>Award: Selected to play for multiple UNAM events. </div>
+                    </div>
+                    <b>Innovation Virtual (Microsoft)| Mexico City, Mexico Dec 2021 – Present </b> Full Stack Development
+                    <p>Subjects: HTML, CSS, Git, JavaScript, NodeJS(For Backend). </p>
+                    <b>Making Devs | Mexico City, Mexico October  2022 – Present </b> Software Development Development
+                    <div class="d-flex flex-column">
+                      <div>Subjects: Ruby, Rails, Groovy, TDD, Elixir, Capistrano, Software Architecture </div>
+                    </div>
+                    <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
+                      <u class="textColor">ADDITIONAL SKILLS  </u>
+                    </h4>
+                    <p>Energetic autodidact, Efficient under pressure, Good communication, Teamwork, Leadership.</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal 2 END-->
 
             <img style="width: 100%;" :src="candidate.graph" class="img-fluid" alt="">
             <hr class="solid my-4 " data-appear-animation="fadeInUpShorter"
