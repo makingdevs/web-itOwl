@@ -35,6 +35,7 @@
   <link rel="stylesheet" href="vendor/css/theme-elements.css">
   <link rel="stylesheet" href="vendor/css/theme-blog.css">
   <link rel="stylesheet" href="vendor/css/theme-shop.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
   <!-- Demo CSS -->
   <link rel="stylesheet" href="vendor/css/demo-landing.css">
@@ -190,6 +191,10 @@
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" style="margin-left: 1%;" data-bs-toggle="modal"
+                    :data-bs-target="`#modalResumen-${index}`">
+                    Description
+                    </button>
                   </div>
                 </div>
               </div>
@@ -209,43 +214,52 @@
                     <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
                       <u class="textColor">WORK EXPERIENCE</u>
                     </h4>
-                    <b class="text-start">Global Excel Management | Mexico City, Mexico May 2022 – Present</b> Assistance Coordinator  / Customer Service Representative.
+                    <b class="text-start"><abbr>{{candidate.titleWork}}</abbr></b>
                     <ol>
                       <ul>
                         <div class="d-flex flex-column">
-                          <div class="text-start">● Coordinating Medical assistance around the world</div>
-                          <div class="text-start">● Researching and understanding the best solutions for the client’s requirements.</div>
-                          <div class="text-start">● Providing accurate information to clients and providers. </div>
+                          <div class="text-start"> {{candidate.workDescription}}</div>
                         </div>
                       </ul>
                     </ol>
-                    <b>Making Devs (Remote) | Mexico City, Mexico October 2022 – Present </b> Jr. Software Developer.
+
+                    <b class="text-start"><abbr>{{candidate.titleWorkSubDescription2}}</abbr></b>
                     <ol>
                       <ul>
                         <div class="d-flex flex-column">
-                          <div class="text-start">● Developing complete applications with different technologies.</div>
-                          <div class="text-start">● Structuring material for different courses and projects given by the company.</div>
+                          <div class="text-start"> {{candidate.workSubDescription2}}</div>
+                        </div>
+                      </ul>
+                    </ol>
+
+                    <b class="text-start"><abbr>{{candidate.titleWorkSubDescription3}}</abbr></b>
+                    <ol>
+                      <ul>
+                        <div class="d-flex flex-column">
+                          <div class="text-start"> {{candidate.workSubDescription3}}</div>
+                        </div>
+                      </ul>
+                    </ol>
+
+                    <b class="text-start"><abbr>{{candidate.titleWorkSubDescription4}}</abbr></b>
+                    <ol>
+                      <ul>
+                        <div class="d-flex flex-column">
+                          <div class="text-start"> {{candidate.workSubDescription4}}</div>
                         </div>
                       </ul>
                     </ol>
                     <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                      <u class="textColor">EDUCATION </u>
+                      <u class="textColor mt-3">EDUCATION </u>
                     </h4>
-                    <b>National Autonomous University of Mexico | Mexico City, Mexico Jul 2017 – Present </b> BA Instrument Performance and Education
+                    <b>{{candidate.titleEducation}}</b>
                     <div class="d-flex flex-column">
-                      <div>Predicted Grade: First Class </div>
-                      <div>Award: Selected to play for multiple UNAM events. </div>
-                    </div>
-                    <b>Innovation Virtual (Microsoft)| Mexico City, Mexico Dec 2021 – Present </b> Full Stack Development
-                    <p>Subjects: HTML, CSS, Git, JavaScript, NodeJS(For Backend). </p>
-                    <b>Making Devs | Mexico City, Mexico October  2022 – Present </b> Software Development Development
-                    <div class="d-flex flex-column">
-                      <div>Subjects: Ruby, Rails, Groovy, TDD, Elixir, Capistrano, Software Architecture </div>
+                      <div>{{candidate.educationDescription}} </div>
                     </div>
                     <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
-                      <u class="textColor">ADDITIONAL SKILLS  </u>
+                      <u class="textColor mt-3">ADDITIONAL SKILLS  </u>
                     </h4>
-                    <p>Energetic autodidact, Efficient under pressure, Good communication, Teamwork, Leadership.</p>
+                    <b>{{candidate.skillsDescription}}</b>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -263,7 +277,7 @@
             </div>
           </div>
           <div class="col-md-5 order-md-2 mb-4 mb-lg-0 " data-appear-animation="fadeInRightShorter">
-            <img style="width: 64%;" :src="candidate.image" class="img-fluid" alt="">
+            <img style="width: 76%;" :src="candidate.image" class="img-fluid" alt="">
             <div class="row">
               <div class="form-group">
                 <button
