@@ -93,6 +93,11 @@
   .text-size{
     font-size: 20px !important;
   }
+  .sizeImage-animation{
+    background-size: 171% !important;
+    background-position: none !important;
+    animation-duration: none !important;
+  }
 }
 
 
