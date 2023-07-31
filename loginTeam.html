@@ -145,16 +145,17 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <FORM class="contact-form form-style-2 form-errors-light" name=form action="candidates.html">
-
-                        <P class="font-weight-semi-bold text-color-light text-3 mb-2">User : <INPUT class="form-control" type=text name=login placeholder="Name"></P>
-                        <P class="font-weight-semi-bold text-color-light text-3 mb-2">Password : <INPUT class="form-control"  type=password name=password placeholder="password"></P>
-                          <div class="row">
-                            <div class="form-group col text-center">
-                              <button class="btn btn colorGeneral px-4 py-3" onclick="loginTeam()" type=button value=Acceder> Log in</button>
-                            </div>
-                          </div>
-                        </FORM>
+                      <form action="candidates.html" method="post" name="authentication" id="authentication" class="authentication">
+                        <label class="font-weight-semi-bold text-color-light text-3 mb-2" for="username">Username :</label>
+                        <br>
+                        <input class="form-control" type="text" name="username" id="username" pattern="[a-zA-Z0-9]+" required>
+                        <br>
+                        <label class="font-weight-semi-bold text-color-light text-3 mb-2" for="password">Password :</label>
+                        <br>
+                        <input class="form-control" type="password" name="password" id="password" pattern="[a-zA-Z0-9]+" required>
+                        <br>
+                        <input class="btn btn colorGeneral px-4 py-3" id="sub" type="submit" value="Submit" onclick="loginTeam();"></input>
+                      </form>
                     </div>
                   </div>
                 </div>
