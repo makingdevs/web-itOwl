@@ -1,4 +1,4 @@
-import { saveTeamUSA, onGetTeamUSAs, deleteTeamUSA, getTeamUSAEdit, updateTeamUSA } from "./collection/teamUSA.js"
+import { saveTeamUSA, onGetTeamUSA, deleteTeamUSA, getTeamUSAEdit, updateTeamUSA } from "./collection/teamUSA.js"
 
 const teamUSAForm = document.getElementById("teamUSA-form")
 const teamUSAContainer = document.getElementById("teamUSA-container")

@@ -163,15 +163,15 @@
 
       <div class="container py-4" id="app">
 
-        <div class="row mt-5" v-for="(candidate, index) in app.candidates" >
+        <div class="row mt-5" v-for="(teamUSAs, index) in app.teamUSA" >
           <div class="col-md-7 order-2">
             <div class="overflow-hidden">
               <h2 class="text-color-dark font-weight-bold text-8 mb-0 pt-0 mt-0 "
-                data-appear-animation="maskUp" data-appear-animation-delay="300">{{candidate.name}}</h2>
+                data-appear-animation="maskUp" data-appear-animation-delay="300">{{teamUSAs.name}}</h2>
             </div>
             <div class="overflow-hidden mb-3">
               <p class="font-weight-bold text-primary text-uppercase mb-0 "
-                data-appear-animation="maskUp" data-appear-animation-delay="500">{{candidate.work}}</p>
+                data-appear-animation="maskUp" data-appear-animation-delay="500">{{teamUSAs.work}}</p>
             </div>
 
             <!-- Modal 1 -->
@@ -180,13 +180,13 @@
               <div class="modal-dialog">
                 <div class="modal-content" >
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">{{candidate.name}}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">{{teamUSAs.name}}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <p class="lead text-justify" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
                       <a href="#">IT OWL : </a>
-                      {{candidate.description}}
+                      {{teamUSAs.description}}
                     </p>
                   </div>
                   <div class="modal-footer">
@@ -207,59 +207,59 @@
               <div class="modal-dialog modal-lg modal-dialog-scrollable">
                 <div class="modal-content" >
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">{{candidate.name}}</h5>
+                    <h5 class="modal-title" id="exampleModalLabel">{{teamUSAs.name}}</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                   </div>
                   <div class="modal-body">
                     <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
                       <u class="textColor">WORK EXPERIENCE</u>
                     </h4>
-                    <b class="text-start"><abbr>{{candidate.titleWork}}</abbr></b>
+                    <b class="text-start"><abbr>{{teamUSAs.titleWork}}</abbr></b>
                     <ol>
                       <ul>
                         <div class="d-flex flex-column">
-                          <div class="text-start"> {{candidate.workDescription}}</div>
+                          <div class="text-start"> {{teamUSAs.workDescription}}</div>
                         </div>
                       </ul>
                     </ol>
 
-                    <b class="text-start"><abbr>{{candidate.titleWorkSubDescription2}}</abbr></b>
+                    <b class="text-start"><abbr>{{teamUSAs.titleWorkSubDescription2}}</abbr></b>
                     <ol>
                       <ul>
                         <div class="d-flex flex-column">
-                          <div class="text-start"> {{candidate.workSubDescription2}}</div>
+                          <div class="text-start"> {{teamUSAs.workSubDescription2}}</div>
                         </div>
                       </ul>
                     </ol>
 
-                    <b class="text-start"><abbr>{{candidate.titleWorkSubDescription3}}</abbr></b>
+                    <b class="text-start"><abbr>{{teamUSAs.titleWorkSubDescription3}}</abbr></b>
                     <ol>
                       <ul>
                         <div class="d-flex flex-column">
-                          <div class="text-start"> {{candidate.workSubDescription3}}</div>
+                          <div class="text-start"> {{teamUSAs.workSubDescription3}}</div>
                         </div>
                       </ul>
                     </ol>
 
-                    <b class="text-start"><abbr>{{candidate.titleWorkSubDescription4}}</abbr></b>
+                    <b class="text-start"><abbr>{{teamUSAs.titleWorkSubDescription4}}</abbr></b>
                     <ol>
                       <ul>
                         <div class="d-flex flex-column">
-                          <div class="text-start"> {{candidate.workSubDescription4}}</div>
+                          <div class="text-start"> {{teamUSAs.workSubDescription4}}</div>
                         </div>
                       </ul>
                     </ol>
                     <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
                       <u class="textColor mt-3">EDUCATION </u>
                     </h4>
-                    <b>{{candidate.titleEducation}}</b>
+                    <b>{{teamUSAs.titleEducation}}</b>
                     <div class="d-flex flex-column">
-                      <div>{{candidate.educationDescription}} </div>
+                      <div>{{teamUSAs.educationDescription}} </div>
                     </div>
                     <h4 class="text-center" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="700">
                       <u class="textColor mt-3">ADDITIONAL SKILLS  </u>
                     </h4>
-                    <b>{{candidate.skillsDescription}}</b>
+                    <b>{{teamUSAs.skillsDescription}}</b>
                   </div>
                   <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -269,7 +269,7 @@
             </div>
             <!-- Modal 2 END-->
 
-            <img style="width: 100%;" :src="candidate.graph" class="img-fluid" alt="">
+            <img style="width: 100%;" :src="teamUSAs.graph" class="img-fluid" alt="">
             <hr class="solid my-4 " data-appear-animation="fadeInUpShorter"
               data-appear-animation-delay="900">
             <div class="row align-items-center " data-appear-animation="fadeInUpShorter"
@@ -277,11 +277,11 @@
             </div>
           </div>
           <div class="col-md-5 order-md-2 mb-4 mb-lg-0 " data-appear-animation="fadeInRightShorter">
-            <img style="width: 77%;" :src="candidate.image" class="img-fluid" alt="">
+            <img style="width: 77%;" :src="teamUSAs.image" class="img-fluid" alt="">
             <div class="row">
               <div class="form-group">
                 <button
-                @click="() => executeCalendly(candidate.calendar)"
+                @click="() => executeCalendly(teamUSAs.calendar)"
                 class="btn btn-modern btn-primary mt-3"><i class="far fa-calendar-alt"></i>
                 Schedule Meeting</button>
                 <button type="button" class="btn btn-modern btn-primary mt-3" style="margin-left: 1%;" data-bs-toggle="modal"
@@ -302,7 +302,7 @@
 
       <section>
         <form id="form__submit" class="contact-form form-style-2 form-errors-light" id="form-clean"
-        target="_blank" method="POST" active="sendCandidate">
+        target="_blank" method="POST" active="sendTeamUSA">
         </form>
       </section>
     </div>
@@ -358,7 +358,7 @@
 </body>
 
 </html>
-<script type="module" src="/js/candidate.js"></script>
+<script type="module" src="/js/teamUSA.js"></script>
 
 <script src="/vendor/js/jquery.min.js"></script>
 <script src="/vendor/js/jquery.easing.min.js"></script>
