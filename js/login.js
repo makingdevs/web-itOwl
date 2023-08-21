@@ -1,31 +1,22 @@
-function go(){
-  if (document.form.password.value=='test' && document.form.login.value=='test'){
+function go() {
+  if (document.form.password.value == 'test' && document.form.login.value == 'test') {
     document.form.submit();
   }
-  else{
+  else {
     alert("Please enter correct username and password.");
   }
 }
 
-function loginTeam(){
-  if (document.form.password.value=='Mo724@2023' && document.form.login.value=='Temp072023'){
-    document.form.submit();
+function LoginTeam2() {
+  let usuario = document.login.usuario.value;
+  let password = document.login.password.value;
+  if (usuario == "Temp072023" && password == "Mo724@2023") {
+    window.location = "candidates.html";
   }
-  else{
+  else {
     alert("Please enter correct username and password to access team.");
   }
 }
 
-//Submit Button
-function loginTeam2() {
-  let userRef = "test";
-  let passRef = "test";
 
-  let user =  document.getElementById("username").value;
-  let pass = document.getElementById("password").value;
-  if (user == userRef || pass == passRef) {
-    document.form.submit();
-  } else {
-    alert("It's seem you make a mistake...")
-  }
-};
+/*contra: Mo724@2023 username: Temp072023 */
