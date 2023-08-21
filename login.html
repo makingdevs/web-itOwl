@@ -145,16 +145,15 @@
                   </div>
                   <div class="row">
                     <div class="col">
-                      <FORM class="contact-form form-style-2 form-errors-light" name=form action="registerCandidate.html">
-
-                        <P class="font-weight-semi-bold text-color-light text-3 mb-2">User : <INPUT class="form-control" type=text name=login placeholder="Name"></P>
-                        <P class="font-weight-semi-bold text-color-light text-3 mb-2">Password : <INPUT class="form-control"  type=password name=password placeholder="password"></P>
+                      <form class="contact-form form-style-2 form-errors-light" name="login">
+                        <p class="font-weight-semi-bold text-color-light text-3 mb-2">User : <input name="usuario" value="" class="form-control" type="text" placeholder="Name"></p>
+                        <p class="font-weight-semi-bold text-color-light text-3 mb-2">Password : <input name="password" value="" class="form-control"  type="password" placeholder="password"></p>
                           <div class="row">
                             <div class="form-group col text-center">
-                              <button class="btn btn colorGeneral px-4 py-3" onclick=go() type=button value=Acceder> Log in</button>
+                              <button class="btn btn colorGeneral px-4 py-3" value="Entrar" onclick="Login()" type=button> Log in</button>
                             </div>
                           </div>
-                        </FORM>
+                      </form>
                     </div>
                   </div>
                 </div>
