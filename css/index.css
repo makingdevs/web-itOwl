@@ -21,6 +21,9 @@
   left: 0;
   z-index: -1;
 }
+.newTextColor{
+  color: #e3eb08;
+}
 .text-header{
   color:#c68642be;
 }
