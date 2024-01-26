@@ -22,7 +22,7 @@ a. “Maria Antonieta Galvez Fuentes Resume.docx” \n
 b. “Jose Smith Resume.docx”`.replace(/  +/g, '');
 
   //window.open(`https://api.whatsapp.com/send?phone=525583817789&text=${encodeURIComponent(message)}`, "_target")
-  window.open(`mailto:ruthamol@itowlus.com?subject=Business IT OWL&body=${encodeURIComponent(message)}`, "_target")
+  window.open(`mailto:information_services@itowlus.com?subject=Business IT OWL&body=${encodeURIComponent(message)}`, "_target")
 }
 
 const submitFormCandidate = function(event) {
