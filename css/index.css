@@ -129,12 +129,13 @@ p {
 
 .clip-caption {
   width: 100%;
-  position: absolute;
+  position: relative;
   top: 50%;
   -ms-transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
   transform: translateY(-50%);
   text-align: center;
+  z-index: 2;
 }
 
 .hexagon-each {
@@ -163,8 +164,17 @@ a.hexagon-each:hover {
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: #000000cc;
-  opacity: 0.5;
+  opacity: 1.5;
+}
+.hexagon-each.clip-gradient::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.486);
+  z-index: 1;
 }
 
 .social-each {
