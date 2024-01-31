@@ -7755,7 +7755,7 @@ a.text-light:focus, a.text-light:hover {
 /* RTL */
 /* #Footer */
 #footer {
-	background: #3d3a56;
+	background: rgb(0 75 153);
 	border-top: 4px solid #536385;
 	font-size: 0.9em;
 	margin-top: 50px;
