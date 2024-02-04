@@ -253,10 +253,10 @@ html.sticky-header-active #header .header-body {
 		#header .header-container {
 				padding: 0 6.5vw;
 		}
-		#header.header-transparent .header-nav-main nav {
+		#header..header-nav-main nav {
 				padding: 0 6.4vw !important;
 		}
-		html.sticky-header-active #header.header-transparent .header-nav-main nav {
+		html.sticky-header-active #header..header-nav-main nav {
 				padding: 0 6.4vw !important;
 		}
 }
