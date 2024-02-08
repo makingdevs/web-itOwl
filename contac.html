@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head charset="UTF-8">
+<head>
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>IT OWL</title>
@@ -35,26 +36,19 @@
   <link rel="stylesheet" href="vendor/css/theme-blog.css">
   <link rel="stylesheet" href="vendor/css/theme-shop.css">
 
-  <!-- Current Page CSS -->
-  <link rel="stylesheet" href="vendor/css/component.css">
-
   <!-- Demo CSS -->
-  <link rel="stylesheet" href="vendor/css/demo-landing.css">
+  <link rel="stylesheet" href="vendor/css/demo-education.css">
   <link rel="stylesheet" href="css/index.css">
+  <link rel="stylesheet" href="vendor/css/demo-cleaning-services.css">
 
   <!-- Skin CSS -->
-  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-landing.css">
-  <link id="skinCSS" rel="stylesheet" href="vendor/css/default.css">
+  <link id="skinCSS" rel="stylesheet" href="vendor/css/skin-education.css">
 
   <!-- Theme Custom CSS -->
   <link rel="stylesheet" href="vendor/css/custom.css">
-  <link rel="stylesheet" href="vendor/css/demo-architecture-2.css">
 
   <!-- Head Libs -->
   <script src="vendor/js/modernizr.min.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
 </head>
 
@@ -68,8 +62,8 @@
             <div class="header-column">
               <div class="header-row">
                 <div class="">
-                  <a href="/home.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
-                      data-sticky-top="0" src="/img/logoLetters.png" style="width:110px"></a>
+                  <a href="home.html"><img alt="Porto" height="auto" data-sticky-width="82" data-sticky-height="40"
+                      data-sticky-top="0" src="img/logoLetters.png" style="width:110px"></a>
                 </div>
               </div>
             </div>
@@ -82,29 +76,43 @@
                     <nav class="collapse">
                       <ul class="nav nav-pills" id="mainNav">
                         <li class="dropdown">
-                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="/home.html">
+                          <a class="dropdown-item textSize" data-hash data-hash-offset="130" href="home.html">
                             Home
                           </a>
                         </li>
-                        <li class="dropdown dropdown-mega">
-                          <a class="dropdown-item textSize" href="/services.html">
-                            Services
+                        <li class="dropdown">
+                          <a class="dropdown-item textSize dropdown-toggle" href="services.html">
+                            Services<i class="p-2 p-events-none"><img src="img/down-arrow.png" /></i>
                           </a>
+                          <ul class="dropdown-menu">
+                            <li class="">
+                              <a class="dropdown-item" href="candidates.html">Software Developer</a>
+                            </li>
+                            <li class="">
+                              <a class="dropdown-item" href="staffing.html">New Resources</a>
+                            </li>
+                            <li class="">
+                              <a class="dropdown-item" href="training.html">Training</a>
+                            </li>
+                            <li class="">
+                              <a class="dropdown-item" href="training-kids.html">STEM K-12</a>
+                            </li>
+                          </ul>
                         </li>
                         <li class="dropdown dropdown-mega">
-                          <a class="dropdown-item textSize" href="/candidates.html">
+                          <a class="dropdown-item textSize" href="candidates.html">
                             Team
                           </a>
                         </li>
                         <li class="dropdown dropdown-mega">
                         <li class="dropdown">
-                          <a class="dropdown-item textSize dropdown-toggle" href="/about.html">
+                          <a class="dropdown-item textSize dropdown-toggle" href="about.html">
                             About Us
                           </a>
                         </li>
                         </li>
                         <li class="dropdown dropdown-mega">
-                          <a class="dropdown-item textSize" href="/contac.html">
+                          <a class="dropdown-item textSize" href="contac.html">
                             Contact Us
                           </a>
                         </li>
@@ -165,7 +173,8 @@
                       </div>
                       <div class="form-group col-lg-6">
                         <input type="text" v-model="contact.telf" value="" data-msg-required="please enter the phone."
-                          pattern="^\d{10,15}$" title="The phone is not correct, please verify" maxlength="15" class="form-control" name="phone" id="phone" placeholder="Number" required>
+                          pattern="^\d{10,15}$" title="The phone is not correct, please verify" maxlength="15"
+                          class="form-control" name="phone" id="phone" placeholder="Number" required>
                       </div>
                       <div class="form-group col-lg-6" style="width: 100%">
                         <input type="email" id="email" name="email" data-msg-required="please enter the email."
@@ -228,16 +237,16 @@
           </div>
         </div>
       </div>
-<div class="container d-flex flex-column justify-content-center align-items-center">
-  <div class="footer-copyright footer-copyright-style-2 text-center">
-    <h4 class="text-white"> Privacy Policy</h4>
-    <h5>
-      States that all materials and information on this
-      website are owned and protected by IT Owl, LLC.
-    </h5>
-    <br>
-  </div>
-</div>
+      <div class="container d-flex flex-column justify-content-center align-items-center">
+        <div class="footer-copyright footer-copyright-style-2 text-center">
+          <h4 class="text-white"> Privacy Policy</h4>
+          <h5>
+            States that all materials and information on this
+            website are owned and protected by IT Owl, LLC.
+          </h5>
+          <br>
+        </div>
+      </div>
     </footer>
     <!-- FOOTER END -->
   </div>
