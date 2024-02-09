@@ -127,11 +127,13 @@
       </div>
     </header>
     <div role="main" class="main">
+      <!-- Desktop -->
       <section class="section border-0 m-0 d-flex justify-content-center align-items-center desktop-section"
         style="height: 100vh; background-color: #9fb5c2;">
-        <div class="d-flex flex-row justify-content-center align-items-center text-center" style="width: 100%; transform: translateY(-10%);"">
+        <div class="d-flex flex-row justify-content-center align-items-center text-center"
+          style="width: 100%; margin-top: 14%">
           <div class="video-container" style="flex: 1;">
-            <video style="width: 100%; height: 100%; object-fit: cover;" autoplay muted playsinline>
+            <video style="width: 100%; height: 70%;" autoplay muted playsinline>
               <source src="video/Owl1Square.mov" type="video/mp4">
             </video>
           </div>
@@ -156,33 +158,34 @@
           </div>
         </div>
       </section>
+      <!--End Desktop-->
 
-      <!--movil-->
+      <!--mobil-->
       <section class="section border-0 m-0 d-flex justify-content-center align-items-center mobile-section"
-      style="height: 90vh; background-color: #9fb5c2;">
-      <div class="d-flex flex-column justify-content-center align-items-center text-center">
-        <div class="video-container">
-          <video style="width: 100%; height: 121%;"  autoplay muted playsinline>
-            <source src="video/Owl1Square.mov" type="video/mp4">
-          </video>
+        style="height: 90vh; background-color: #9fb5c2;">
+        <div class="d-flex flex-column justify-content-center align-items-center text-center">
+          <div class="video-container">
+            <video id="videoMobil" style="width: 100%; height: 121%;" autoplay muted playsinline>
+              <source src="video/Owl1Square.mov" type="video/mp4">
+            </video>
+          </div>
+          <h1
+            class="position-relative text-color-light text-8 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
+            data-appear-animation-delay="0" data-appear-animation="animate__animated animate__zoomIn"
+            data-plugin-options="{'minWindowWidth': 0}">
+            Connecting Talent
+          </h1>
+          <h1 class="newTextColor font-weight-extra-bold text-7 line-height-1 mb-2 appear-animation"
+            data-appear-animation="animate__animated animate__zoomIn" data-appear-animation-delay=""
+            data-plugin-options="{'minWindowWidth': 0}">Empowering SUCCESS: </h1>
+          <h1 class="text-color-light font-weight-extra-bold text-7 line-height-1 mb-2 appear-animation text-center"
+            data-appear-animation="animate__animated animate__zoomIn" data-appear-animation-delay=""
+            data-plugin-options="{'minWindowWidth': 0}">Your Partner in Staffing & IT Excellence </h1>
+          <button onclick="window.location.href='candidates.html'" class="btn btn-modern btn-primary mt-3">Looking for a
+            team / work</button>
         </div>
-        <h1
-          class="position-relative text-color-light text-8 line-height-5 font-weight-medium px-4 mb-2 appear-animation"
-          data-appear-animation-delay="0" data-appear-animation="animate__animated animate__zoomIn"
-          data-plugin-options="{'minWindowWidth': 0}">
-          Connecting Talent
-        </h1>
-        <h1 class="newTextColor font-weight-extra-bold text-7 line-height-1 mb-2 appear-animation"
-          data-appear-animation="animate__animated animate__zoomIn" data-appear-animation-delay=""
-          data-plugin-options="{'minWindowWidth': 0}">Empowering SUCCESS: </h1>
-        <h1 class="text-color-light font-weight-extra-bold text-7 line-height-1 mb-2 appear-animation text-center"
-          data-appear-animation="animate__animated animate__zoomIn" data-appear-animation-delay=""
-          data-plugin-options="{'minWindowWidth': 0}">Your Partner in Staffing & IT Excellence </h1>
-        <button onclick="window.location.href='candidates.html'" class="btn btn-modern btn-primary mt-3">Looking for a
-          team / work</button>
-      </div>
-    </section>
-      <!--End movil-->
+      </section>
+      <!--End mobil-->
 
     </div>
     <div id="main" class="container">
@@ -404,3 +407,4 @@
 <!-- Theme Initialization Files -->
 <script src="vendor/js/theme.init.js"></script>
 <script src="js/contac.js"></script>
+<script src="js/index.js"></script>
