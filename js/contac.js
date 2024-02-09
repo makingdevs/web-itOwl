@@ -23,3 +23,7 @@ const submitForm = function(event) {
 var form = document.getElementById("form__submit");
 // attach event listener
 form.addEventListener("submit", submitForm, true);
+
+document.getElementById('email').oninvalid = function(event) {
+  event.target.setCustomValidity('Please enter an email with format: name@company.com');
+}
