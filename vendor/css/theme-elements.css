@@ -3790,8 +3790,8 @@ html.ie9 .call-to-action.button-centered .container > .row > [class*="col-"], ht
 }
 
 .owl-carousel.nav-dark:not(.nav-style-1):not(.nav-style-2):not(.nav-style-3):not(.show-nav-title):not(.nav-arrows-1) .owl-nav .owl-next, .owl-carousel.nav-dark:not(.nav-style-1):not(.nav-style-2):not(.nav-style-3):not(.show-nav-title):not(.nav-arrows-1) .owl-nav .owl-prev {
-	background-color: #3c3a56 !important;
-	border-color: #3c3a56 #3c3a56 #3c3a56 !important;
+	background-color: #004b99 !important;
+	border-color: #004b99 #004b99 #004b99 !important;
 	color: #FFF !important;
 }
 
