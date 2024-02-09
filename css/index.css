@@ -1,3 +1,20 @@
+@media (max-width: 768px) {
+  .desktop-section {
+    display: none !important;
+  }
+  .mobile-section {
+    display: flex !important;
+  }
+}
+
+@media (min-width: 769px) {
+  .desktop-section {
+    display: flex !important;
+  }
+  .mobile-section {
+    display: none !important;
+  }
+}
 .video-container {
   position: relative;
   width: 100%;
