@@ -88,8 +88,12 @@
                             <li class="">
                               <a class="dropdown-item" href="candidates.html">Software Developer</a>
                             </li>
-                            <li class="">
-                              <a class="dropdown-item" href="staffing.html">New Resources<span style="font-size: 0.8em;"> Staffing/Recruiting</span></a>
+                            <li class="dropdown-submenu">
+                              <a class="dropdown-item" href="staffing.html">New Resources</a>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="staffing.html">Staffing</a></li>
+                                <li><a class="dropdown-item" href="staffing.html">Recruiting</a></li>
+                              </ul>
                             </li>
                             <li class="dropdown-submenu">
                               <a class="dropdown-item" href="training.html">Training</a>
@@ -145,13 +149,16 @@
     </header>
 
     <div role="main" class="main">
-      <section class="section border-0 m-0 d-flex justify-content-center align-items-center"
+      <section class="section border-0 m-0 d-flex justify-content-center align-items-center flex-column"
       style="height: 120vh; background-color: #9fb5c2;">
         <div class="video-container" style="width: 100%; height: 100%;">
-          <video style="width: 100%; height: 100%; object-fit: cover;" autoplay muted playsinline>
+          <video style="width: 100%; height: 100%;" autoplay muted playsinline>
             <source src="video/Owl1Square.mov" type="video/mp4">
           </video>
         </div>
+        <h1 class="newTextColor font-weight-extra-bold text-7 line-height-1 mb-2 appear-animation"
+        data-appear-animation="animate__animated animate__zoomIn" data-appear-animation-delay=""
+        data-plugin-options="{'minWindowWidth': 0}">Empowering SUCCESS: </h1>
       </section>
 
       <section id="recruit" class="section section-height-3 bg-color-grey-scale-1 m-0 border-0">
@@ -205,7 +212,7 @@
               data-plugin-options="{'responsive': {'576': {'items': 1}, '768': {'items': 1}, '992': {'items': 2}, '1200': {'items': 2}}, 'margin': 25, 'loop': false, 'nav': true, 'dots': false, 'stagePadding': 40}">
               <div>
                 <img class="img-fluid rounded-0 mb-4" src="img/team-about/ruthMolano.jpg" alt="" />
-                <h3 class="font-weight-bold text-color-dark text-4 mb-0">John Doe</h3>
+                <h3 class="font-weight-bold text-color-dark text-4 mb-0">Ruth Molano</h3>
                 <p class="text-2 mb-0">CEO at IT OWL</p>
               </div>
               <div>
