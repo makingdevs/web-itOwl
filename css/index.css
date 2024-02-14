@@ -15,6 +15,10 @@
     display: none !important;
   }
 }
+
+.spaced-text {
+  letter-spacing: 2px;
+}
 .video-container {
   position: relative;
   width: 100%;
