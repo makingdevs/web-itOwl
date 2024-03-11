@@ -35,10 +35,12 @@ const submitFormCandidate = function(event) {
   sendCandidate(name, phone, mensaje, email);
 };
 
-// your form
-var form = document.getElementById("form__submit");
-// attach event listener
-form.addEventListener("submit", submitFormCandidate, true);
+  // your form
+  var form = document.getElementById("form__submit");
+  // attach event listener
+  if(form) {
+    form.addEventListener("submit", submitFormCandidate, true);
+  }
 
 
 createApp({
